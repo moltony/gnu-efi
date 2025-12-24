@@ -74,12 +74,12 @@ INSTALL      := install
 
 # Compilation tools
 HOSTCC       := $(prefix)gcc
-CC           := $(prefix)$(CROSS_COMPILE)gcc
-AS           := $(prefix)$(CROSS_COMPILE)as
-LD           := $(prefix)$(CROSS_COMPILE)ld
-AR           := $(prefix)$(CROSS_COMPILE)ar
-RANLIB       := $(prefix)$(CROSS_COMPILE)ranlib
-OBJCOPY      := $(prefix)$(CROSS_COMPILE)objcopy
+CC           := $(prefix)x86_64-elf-gcc
+AS           := $(prefix)x86_64-elf-as
+LD           := $(prefix)x86_64-elf-ld
+AR           := $(prefix)x86_64-elf-ar
+RANLIB       := $(prefix)x86_64-elf-ranlib
+OBJCOPY      := $(prefix)objcopy
 
 # Set verbose or nonverbose output similarly to automake's silent rules.
 # Default is nonverbose, but, just like with automake, it can be disabled

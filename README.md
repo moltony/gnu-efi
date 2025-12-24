@@ -1,3 +1,7 @@
+# shitty gnu-efi fork
+
+it barely works
+
 -------------------------------------------------
 Building EFI Applications Using the GNU Toolchain
 -------------------------------------------------

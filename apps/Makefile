@@ -99,7 +99,8 @@ $(TARGET_RTDRIVERS): SUBSYSTEM = 0xc
 
 ifeq ($(SYSTEM_HAS_EFI_OBJCOPY),1)
 
-FORMAT		:= -O efi-app-$(ARCH)
+# i know this is supposed to be cross platform and all with the arch variable but do i look like i use a 2011 4gb laptop
+FORMAT		:= -O pei-x86-64
 $(TARGET_BSDRIVERS): FORMAT=-O efi-bsdrv-$(ARCH)
 $(TARGET_RTDRIVERS): FORMAT=-O efi-rtdrv-$(ARCH)
 
