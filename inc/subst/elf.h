@@ -625,4 +625,7 @@ typedef struct {
   Elf64_Word    vda_next;
 } Elf64_Verdaux;
 
+// this is the only one i need
+#define EM_X86_64 62
+
 #endif /* _UAPI_LINUX_ELF_H */
